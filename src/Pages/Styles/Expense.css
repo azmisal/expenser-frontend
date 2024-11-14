@@ -1,0 +1,147 @@
+/* Basic Reset */
+
+
+.expense-tracker{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* background: rebeccapurple; */
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+.expenseSide{
+    margin-right: 5vw;
+}
+
+.dataSide{
+    margin-left: 5vw;
+}
+/* Calendar Grid Styling */
+.calendar-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    /* gap: 5px; */
+    max-width: 600px;
+    margin: 20px;
+}
+
+/* Days of the Week Header */
+.day-header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #0066cc;
+    border: 1px solid rgba(0, 0, 0, 0.124);
+    color: white;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+/* Each Day Cell Styling */
+.calendar-cell {
+    position: relative;
+    width: 50px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    min-height: 50px;
+}
+
+.calendar-cell:hover {
+    background-color: #e0f7fa;
+}
+
+/* Styling for Date in Upper Left and Amount in Center */
+.calendar-cell .date {
+    font-size: 0.75em;
+    color: #888;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
+
+.calendar-cell .amount {
+    font-size: 1.2em;
+    color: #00796b;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Popup Modal Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    text-align: center;
+}
+
+.popup h3 {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.popup input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.popup button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:first-of-type {
+    background-color: #00796b;
+    color: white;
+}
+
+.popup button:last-of-type {
+    background-color: #cccccc;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}

@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre&family=Faculty+Glyphic&family=Ga+Maamli&display=swap');
+.Signup{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Faculty Glyphic", sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff2e1c2;
+    color: aliceblue;
+
+}
+
+.signupBox{
+    width: 35%;
+    background-color: rgb(37 37 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+}
+.SignHead{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: semi-bold;
+    color: #F96E2A;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+form{
+    /* background: #e75353; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    width: 96%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 1% 2%;
+    margin-bottom: 15px;
+    color: #464545;
+    font-family: "Faculty Glyphic", sans-serif;
+
+
+}
+.showpass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: black; */
+    margin-bottom: 15px;
+
+
+}
+
+.password{
+    margin-bottom: 0;
+}
+.eyeIcon{
+    border-radius: 5px;
+    margin-left: 2%;
+    width: 15%;
+    background-color: #000000;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    
+
+}
+.eyeIcon:hover{
+    background-color: #2c2c2c;
+    transition: .1s ease-in-out;
+    
+}
+.showicon{
+    width: 20px;
+    height: 20px;
+    /* background-color: #363535; */
+    color: #f1f1f1;
+    /* height: 100%; */
+    /* height: 100%; */
+    /* background-color: #F96E2A; */
+}
+.SignupBut{
+    background-color: #363535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+button[type = 'submit']{
+    background-color: #F96E2A;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #363535;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* width: 100px; */
+    /* height: 30px; */
+    padding: 10px 20px;
+    font-family: "Faculty Glyphic", sans-serif;
+    transition: .1s ease-in-out;
+
+}
+
+
+
+button[type = 'submit']:hover{
+    transition: .1s ease-in-out;
+    background-color: #ff5900;
+    font-size: 18px;
+}
+
+
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
