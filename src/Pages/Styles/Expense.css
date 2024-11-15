@@ -65,6 +65,17 @@ body {
     transition: background-color 0.3s ease;
     min-height: 50px;
 }
+.calendar-cell.today-cell {
+    background-color: #ffeb3b; /* Highlight for today's date */
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .calendar-cell.faded-cell {
+    background-color: #f0f0f0; /* Faded style for past dates */
+    color: #aaa;
+    pointer-events: none; /* Disable clicks on past dates */
+  }
 
 .calendar-cell:hover {
     background-color: #e0f7fa;
