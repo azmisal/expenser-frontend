@@ -5,10 +5,10 @@ import ExpenseTracker from './Pages/Expense'
 function App() {
   return (
     <div className="App">
-      {/* <Signup/> */}
-      {/* <Login/>*/}
+      <Signup/>
+      {/* <Login/> */}
 
-       <ExpenseTracker/>
+       {/* <ExpenseTracker/> */}
     </div>
   );
 }
